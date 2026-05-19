@@ -8,6 +8,9 @@
 	</body>
 	
 	<script>
-		alert("Coucou !");
+		document.body.style.background =`rgb(${Math.random()*255},120,120)`;
+		windows.setTimeout(function (){
+			window.reload();
+		}, 2000);
 	</script>
 </html>
