@@ -20,7 +20,14 @@
 
 	<script>
 		
-
+		fetch("https://isaxl.mamboleoo.be/APIS/fetch_messages.php")
+		.then(function (response) {
+			console.log(response);
+			response.json().then(function (data) {
+				console.log(data);
+				updateChat(data.data);
+			});
+		})
 		function updateChat (messages) {
 
 			
