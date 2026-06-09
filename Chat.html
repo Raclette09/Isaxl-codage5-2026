@@ -53,7 +53,9 @@
 					"Content-Type" : "application/x-www-form-urlencoded"
 				},
 				body: "cle=ABCD123&username=" +username + "&texte=" + text
-			})
+			}).then(function () {
+				location.reload;
+			});
 		}
 
 	</script>
